@@ -1,16 +1,5 @@
 
-vim.cmd[[colorscheme catppuccin-frappe]]
-
-
-
-
-
-
-
-
-
--- examples for your init.lua
-
+vim.cmd[[colorscheme nord]]
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
@@ -36,3 +25,4 @@ require('leap').add_default_mappings()
 require('neoscroll').setup()
 require"fidget".setup{}
 require 'jabs'.setup {}
+require('gitsigns').setup()

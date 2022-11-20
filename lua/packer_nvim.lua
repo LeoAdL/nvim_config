@@ -165,5 +165,7 @@ use 'karb94/neoscroll.nvim'
 use 'nvim-treesitter/nvim-treesitter-context'
 use "rafamadriz/friendly-snippets"
 use {"kdheepak/lazygit.nvim"}
+use "EdenEast/nightfox.nvim" -- Packer
+use {"rmehri01/onenord.nvim"}
 end)
 
