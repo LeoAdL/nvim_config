@@ -166,5 +166,6 @@ use "rafamadriz/friendly-snippets"
 use {"kdheepak/lazygit.nvim"}
 use "EdenEast/nightfox.nvim" -- Packer
 use {"rmehri01/onenord.nvim"}
+use {"goerz/jupytext.vim"}
 end)
 
