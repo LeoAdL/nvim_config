@@ -120,7 +120,6 @@ use {
   end,
 }
   use {'hkupty/iron.nvim'}
-  use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins'}
   use {'lervag/vimtex'}
   use {"rcarriga/nvim-notify"}
 	use {
