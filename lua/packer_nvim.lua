@@ -102,9 +102,6 @@ use {
   use {'kevinhwang91/nvim-hlslens' }
   use {"yamatsum/nvim-cursorline"}
   use {
-    "startup-nvim/startup.nvim",
-    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }}
-  use {
   'jghauser/mkdir.nvim'
   }
   use {'matbme/JABS.nvim'}
@@ -167,5 +164,11 @@ use {"kdheepak/lazygit.nvim"}
 use "EdenEast/nightfox.nvim" -- Packer
 use {"rmehri01/onenord.nvim"}
 use {"goerz/jupytext.vim"}
+use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+}
 end)
 

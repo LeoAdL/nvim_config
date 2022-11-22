@@ -109,7 +109,6 @@ require('telescope').load_extension('fzf')
 require('telescope').load_extension('file_browser')
 require('telescope').load_extension("ui-select")
 require('nvim-lightbulb').setup({autocmd = {enabled = true}})
-require("startup").setup({theme = "dashboard"}) -- put theme name here
 require('telescope').load_extension('fzy_native')
 require"telescope".load_extension("bibtex")
 require("telescope").load_extension("lazygit")

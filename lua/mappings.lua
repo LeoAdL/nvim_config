@@ -60,8 +60,6 @@ local on_attach = function(client, bufnr)
 	-- buf_set_keymap('n', '<leader>wr',   '<cmd>lua vim.lsp.buf.remove_workleader_folder()<CR>',       opts)
 	-- buf_set_keymap('n', '<leader>wl',   '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workleader_folders()))<CR>', opts)
 end
-local keymap = vim.api.nvim_set_keymap
-keymap('n', '<Space>f', '<ESC>:lua vim.lsp.buf.format({ timeout_ms = 2000 })<CR>', {noremap = true, silent = true})
 
 local maps = { i = {}, n = {}, v = {}, t = {}, [""] = {} }
 

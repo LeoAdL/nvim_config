@@ -4,7 +4,6 @@ vim.cmd[[colorscheme nord]]
 vim.opt.termguicolors = true
 
 
-
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("configs/lsp_signature")
@@ -12,6 +11,7 @@ require("configs/nvim_cmp")
 require("configs/null_ls_vim")
 require("configs/nvim_autopairs")
 require("configs/telescope")
+require('configs/alpha')
 require("configs/treesitter")
 require("configs/hslens")
 require("configs/vimtex")
