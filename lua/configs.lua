@@ -22,6 +22,7 @@ require("configs/notify")
 require("configs/iron")
 require("configs/magma")
 require("configs/trouble")
+require("configs/barbar")
 require('leap').add_default_mappings()
 require('neoscroll').setup()
 require"fidget".setup{}
