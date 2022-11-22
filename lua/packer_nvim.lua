@@ -7,8 +7,6 @@ return require('packer').startup(function(use)
     use {'shaunsingh/nord.nvim'}
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use {'kevinhwang91/nvim-bqf'}
-  use 'MunifTanjim/nui.nvim'
-  use 'smzm/hydrovim'
 use "nvim-lua/plenary.nvim"
 use 'ggandor/leap.nvim'
 use 'nvim-tree/nvim-web-devicons'
