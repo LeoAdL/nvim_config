@@ -96,7 +96,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'pyright', 'julials', 'texlab', 'ltex', 'marksman'}
+local servers = {'luau_lsp','pyright', 'julials', 'texlab', 'ltex', 'marksman','grammarly'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
