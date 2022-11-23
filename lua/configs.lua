@@ -7,7 +7,10 @@ vim.opt.termguicolors = true
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("configs/lsp_signature")
+require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load({ paths = {"./snippets"}})
 require("configs/nvim_cmp")
+
 require("configs/null_ls_vim")
 require("configs/nvim_autopairs")
 require("configs/telescope")
@@ -23,6 +26,7 @@ require("configs/iron")
 require("configs/magma")
 require("configs/trouble")
 require("configs/barbar")
+-- load snippets from path/of/your/nvim/config/my-cool-snippets
 require('leap').add_default_mappings()
 require('neoscroll').setup()
 require"fidget".setup{}

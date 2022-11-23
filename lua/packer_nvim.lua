@@ -56,7 +56,6 @@ use {
 use 'nvim-treesitter/playground'
 use 'JoosepAlviste/nvim-ts-context-commentstring'
 
-use({"L3MON4D3/LuaSnip"})
 
 use 'hrsh7th/cmp-nvim-lsp'
 use 'hrsh7th/cmp-buffer'
@@ -188,5 +187,6 @@ use {
     {'nvim-lua/plenary.nvim'},
   }
 }
+use({"L3MON4D3/LuaSnip"})
 end)
 
