@@ -188,5 +188,22 @@ use {
   }
 }
 use({"L3MON4D3/LuaSnip"})
+use({
+  "princejoogie/dir-telescope.nvim",
+  -- telescope.nvim is a required dependency
+  requires = {"nvim-telescope/telescope.nvim"},
+  config = function()
+    require("dir-telescope").setup({
+      hidden = true,
+      respect_gitignore = true,
+    })
+  end,
+})
+use { 'adoyle-h/lsp-toggle.nvim' }
+use {'keyvchan/telescope-find-pickers.nvim'}
+use {
+    "benfowler/telescope-luasnip.nvim",
+    module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
+}
 end)
 

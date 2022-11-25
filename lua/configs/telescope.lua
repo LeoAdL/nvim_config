@@ -109,10 +109,14 @@ require('telescope').load_extension('fzf')
 require('telescope').load_extension('file_browser')
 require('telescope').load_extension("ui-select")
 require('nvim-lightbulb').setup({autocmd = {enabled = true}})
-require('telescope').load_extension('fzy_native')
-require"telescope".load_extension("bibtex")
+require("telescope").load_extension("bibtex")
 require("telescope").load_extension("lazygit")
-
+require('telescope').load_extension('find_pickers')
+require('lsp-toggle').setup {
+  create_cmds = true, -- Whether to create user commands
+  telescope = true, -- Whether to load telescope extensions
+}
+require('telescope').load_extension('lazygit')
 -- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --
 -- ━━━━━━━━━━━━━━━━━❰ end configs ❱━━━━━━━━━━━━━━━━━ --
 -- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ --
