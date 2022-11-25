@@ -10,6 +10,9 @@ vim.opt.termguicolors = true
 vim.opt.autochdir          = true
 vim.opt.cursorline= true
 vim.opt.cursorlineopt= "number"
+vim.opt.relativenumber = true
+vim.opt.signcolumn = "yes"           
+
 require('configs')                  -- plugin independent configs
 require('mappings')                 -- plugin independent mappings
 require('packer_nvim')

@@ -6,7 +6,12 @@ null_ls.setup({
 		null_ls.builtins.diagnostics.chktex,
 		null_ls.builtins.diagnostics.flake8,
 		null_ls.builtins.formatting.prettier,
-		null_ls.builtins.formatting.isort,
+        null_ls.builtins.formatting.reorder_python_imports,
+        null_ls.builtins.diagnostics.pycodestyle,
+        null_ls.builtins.diagnostics.pydocstyle,
+        null_ls.builtins.completion.luasnip,
+        null_ls.builtins.diagnostics.luacheck,
+		null_ls.builtins.formatting.stylua,
     }}
 )
 local lsp_formatting = function(bufnr)
