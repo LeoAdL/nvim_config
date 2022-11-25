@@ -205,5 +205,6 @@ use {
     "benfowler/telescope-luasnip.nvim",
     module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
 }
+use {'onsails/lspkind.nvim'}
 end)
 
