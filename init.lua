@@ -12,6 +12,9 @@ vim.opt.cursorline= true
 vim.opt.cursorlineopt= "number"
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"           
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 
 require('configs')                  -- plugin independent configs
 require('mappings')                 -- plugin independent mappings
