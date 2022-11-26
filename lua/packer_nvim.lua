@@ -54,6 +54,7 @@ use {
         run = ':TSUpdate'
     }
 use 'nvim-treesitter/playground'
+use 'nvim-treesitter/nvim-treesitter-context'
 use 'JoosepAlviste/nvim-ts-context-commentstring'
 
 
@@ -155,7 +156,6 @@ use { "nvim-telescope/telescope-bibtex.nvim",
 }
 use {"nvim-telescope/telescope-fzy-native.nvim"}
 use 'karb94/neoscroll.nvim'
-use 'nvim-treesitter/nvim-treesitter-context'
 use "rafamadriz/friendly-snippets"
 use {"kdheepak/lazygit.nvim"}
 use "EdenEast/nightfox.nvim" -- Packer
