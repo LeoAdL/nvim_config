@@ -97,7 +97,6 @@ use {
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
  use {"ellisonleao/glow.nvim"}
-  use {'kevinhwang91/nvim-hlslens' }
   use {"yamatsum/nvim-cursorline"}
   use {
   'jghauser/mkdir.nvim'
