@@ -9,8 +9,8 @@ require('telescope').setup {
 			'--line-number',
 			'--column',
 			'--smart-case',
+			'--hidden'
 		},
-
 		initial_mode = "insert",
 		selection_strategy = "reset",
 		sorting_strategy = "ascending",
@@ -64,12 +64,10 @@ require('telescope').setup {
 
 		live_grep = {
 			preview = {
-				treesitter = false
+				treesitter = true
 			}
 		},
 
-		-- Developer configurations: Not meant for general override
-		buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
 	},
 
 	extensions = {
