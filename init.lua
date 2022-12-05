@@ -21,7 +21,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
-
+require('impatient')
 require('configs')                  -- plugin independent configs
 require('mappings')                 -- plugin independent mappings
 require('packer_nvim')

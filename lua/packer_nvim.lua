@@ -5,8 +5,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
     use {'shaunsingh/nord.nvim'}
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-  use {'kevinhwang91/nvim-bqf'}
 use "nvim-lua/plenary.nvim"
 use 'ggandor/leap.nvim'
 use 'nvim-tree/nvim-web-devicons'
@@ -38,7 +36,7 @@ use {
 use {
   'rmagatti/goto-preview',
   config = function()
-    require('goto-preview').setup {}
+    require('goto-preview').setup {default_mappings = true}
   end
 }
 use 'j-hui/fidget.nvim'
@@ -97,10 +95,6 @@ use {
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
  use {"ellisonleao/glow.nvim"}
-  use {"yamatsum/nvim-cursorline"}
-  use {
-  'jghauser/mkdir.nvim'
-  }
   use {'matbme/JABS.nvim'}
   use {
   "utilyre/barbecue.nvim",
@@ -140,7 +134,6 @@ use {
     }
   end
 }
-use { "catppuccin/nvim", as = "catppuccin" }
 use {
     'kosayoda/nvim-lightbulb',
     requires = 'antoinemadec/FixCursorHold.nvim',
@@ -153,7 +146,6 @@ use { "nvim-telescope/telescope-bibtex.nvim",
     require"telescope".load_extension("bibtex")
   end,
 }
-use {"nvim-telescope/telescope-fzy-native.nvim"}
 use 'karb94/neoscroll.nvim'
 use "rafamadriz/friendly-snippets"
 use {"kdheepak/lazygit.nvim"}
@@ -205,5 +197,7 @@ use {
     module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
 }
 use {'onsails/lspkind.nvim'}
+use 'lewis6991/impatient.nvim'
+
 end)
 
