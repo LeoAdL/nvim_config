@@ -110,6 +110,7 @@ require('nvim-lightbulb').setup({autocmd = {enabled = true}})
 require("telescope").load_extension("bibtex")
 require("telescope").load_extension("lazygit")
 require('telescope').load_extension('find_pickers')
+require("telescope").load_extension("notify")
 require('lsp-toggle').setup {
   create_cmds = true, -- Whether to create user commands
   telescope = true, -- Whether to load telescope extensions
