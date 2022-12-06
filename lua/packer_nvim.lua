@@ -195,6 +195,6 @@ use {
 }
 use {'onsails/lspkind.nvim'}
 use 'lewis6991/impatient.nvim'
-
+use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 end)
 
