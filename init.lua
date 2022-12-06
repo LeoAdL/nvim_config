@@ -16,10 +16,9 @@ vim.opt.cursorline= true
 vim.opt.cursorlineopt= "number"
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"           
+vim.g.vimtex_compiler_progname='nvr'
     -- ordinary Neovim
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 require('impatient')
 require('configs')                  -- plugin independent configs
