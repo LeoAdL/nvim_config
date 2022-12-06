@@ -92,9 +92,10 @@
 		],
 		"description": "Generates a simple LaTeX template"
 	},
-	"Beamer": {
-		"prefix": "beamer",
+	"Slides-Template": {
+		"prefix": "template-beamer",
 		"body": [
+			"% !TEX program = xelatex",
 			"\\documentclass[12pt,aspectratio=169]{beamer}",
 			"\\usepackage[american]{babel}",
 			"\\usetheme[progressbar=frametitle, titleformat=smallcaps, numbering=fraction]{metropolis}",
@@ -162,14 +163,14 @@
 			"\\makeatletter",
 			"",
 			"",
-			"\\definecolor{dblue}{RGB}{51,3,0}",
-			"\\definecolor{umber}{HTML}{c9510c}",
-			"\\definecolor{alertcolor}{HTML}{bd2c00}",
-			"\\definecolor{examplecolor}{HTML}{6cc644}",
+			"\\definecolor{dblue}{HTML}{2E3440}{HTML}{2E3440}
+			"\\definecolor{umber}{HTML}{8FBCBB}",
+			"\\definecolor{alertcolor}{HTML}{88C0D0}",
+			"\\definecolor{examplecolor}{HTML}{BF616A}",
 			"",
-			"\\definecolor{pale}{HTML}{fafafa}",
-			"\\definecolor{bluish}{HTML}{4078c0}",
-			"\\definecolor{cream}{HTML}{f5f5f5}",
+			"\\definecolor{pale}{HTML}{ECEFF4}",
+			"\\definecolor{bluish}{HTML}{E5E9F0}",
+			"\\definecolor{cream}{HTML}{D8DEE9}",
 			"\\setbeamercolor{progress bar}{fg=bluish,bg=cream}",
 			"\\setbeamercolor{frametitle}{fg=umber,bg=pale}",
 			"\\setbeamercolor{normal text}{fg=dblue,bg=pale}",
