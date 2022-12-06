@@ -98,6 +98,7 @@ require('telescope').setup {
 -- To get telescope-extension loaded and working with telescope,
 -- you need to call load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('luasnip')
 require('telescope').load_extension('file_browser')
 require('telescope').load_extension("ui-select")
 require('nvim-lightbulb').setup({autocmd = {enabled = true}})

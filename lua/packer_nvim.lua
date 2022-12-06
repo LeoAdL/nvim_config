@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
 use "nvim-lua/plenary.nvim"
 use 'ggandor/leap.nvim'
 use 'nvim-tree/nvim-web-devicons'
-
 use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -61,7 +60,6 @@ use 'hrsh7th/cmp-buffer'
 use 'hrsh7th/cmp-path'
 use 'hrsh7th/cmp-cmdline'
 use {'hrsh7th/nvim-cmp'}
-use 'saadparwaiz1/cmp_luasnip'
 
 use {
 	"windwp/nvim-autopairs"}
@@ -147,7 +145,6 @@ use { "nvim-telescope/telescope-bibtex.nvim",
   end,
 }
 use 'karb94/neoscroll.nvim'
-use "rafamadriz/friendly-snippets"
 use {"kdheepak/lazygit.nvim"}
 use "EdenEast/nightfox.nvim" -- Packer
 use {"rmehri01/onenord.nvim"}
@@ -179,6 +176,7 @@ use {
   }
 }
 use({"L3MON4D3/LuaSnip"})
+use 'saadparwaiz1/cmp_luasnip'
 use({
   "princejoogie/dir-telescope.nvim",
   -- telescope.nvim is a required dependency
@@ -194,7 +192,6 @@ use { 'adoyle-h/lsp-toggle.nvim' }
 use {'keyvchan/telescope-find-pickers.nvim'}
 use {
     "benfowler/telescope-luasnip.nvim",
-    module = "telescope._extensions.luasnip",  -- if you wish to lazy-load
 }
 use {'onsails/lspkind.nvim'}
 use 'lewis6991/impatient.nvim'

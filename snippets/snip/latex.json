@@ -1,5 +1,5 @@
 {
-	"Simple Template": {
+	"Template": {
 		"prefix": "template-basic",
 		"body": [
 			"\\documentclass[12pt]{article}",
@@ -92,8 +92,8 @@
 		],
 		"description": "Generates a simple LaTeX template"
 	},
-	"Slides-Template": {
-		"prefix": "template-beamer",
+	"Beamer": {
+		"prefix": "beamer-slides",
 		"body": [
 			"% !TEX program = xelatex",
 			"\\documentclass[12pt,aspectratio=169]{beamer}",
@@ -163,7 +163,7 @@
 			"\\makeatletter",
 			"",
 			"",
-			"\\definecolor{dblue}{HTML}{2E3440}{HTML}{2E3440}
+			"\\definecolor{dblue}{HTML}{2E3440}",
 			"\\definecolor{umber}{HTML}{8FBCBB}",
 			"\\definecolor{alertcolor}{HTML}{88C0D0}",
 			"\\definecolor{examplecolor}{HTML}{BF616A}",

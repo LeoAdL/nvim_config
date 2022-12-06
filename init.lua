@@ -21,9 +21,9 @@ vim.opt.signcolumn = "yes"
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
-vim.g.tex_flavor = "latex"
 require('impatient')
 require('configs')                  -- plugin independent configs
 require('mappings')                 -- plugin independent mappings
 require('packer_nvim')
+vim.g.tex_flavor = 'latex'
 end
