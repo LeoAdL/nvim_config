@@ -32,7 +32,6 @@ require("configs/indent_blankline")
 require("configs/lualine")
 require("configs/notify")
 require("configs/iron")
-require("configs/magma")
 require("configs/trouble")
 require("configs/barbar")
 -- load snippets from path/of/your/nvim/config/my-cool-snippets
@@ -41,3 +40,4 @@ require('neoscroll').setup()
 require"fidget".setup{}
 require 'jabs'.setup {}
 require('gitsigns').setup()
+require('hlargs').setup()

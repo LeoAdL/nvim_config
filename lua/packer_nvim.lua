@@ -196,5 +196,19 @@ use {
 use {'onsails/lspkind.nvim'}
 use 'lewis6991/impatient.nvim'
 use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+use {
+  'm-demare/hlargs.nvim',
+  requires = { 'nvim-treesitter/nvim-treesitter' }
+}-- Lua
+use {
+  "folke/twilight.nvim",
+  config = function()
+    require("twilight").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
 end)
 

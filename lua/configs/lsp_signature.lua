@@ -1,3 +1,4 @@
+
  cfg = {
   debug = false, -- set to true to enable debug logging
   log_path = vim.fn.stdpath("cache") .. "/lsp_signature.log", -- log dir when debug is on
@@ -32,7 +33,7 @@
   hint_scheme = "String",
   hi_parameter = "LspSignatureActiveParameter", -- how your parameter will be highlight
   handler_opts = {
-    border = "rounded"   -- double, rounded, single, shadow, none
+    border = "rounded"   -- double, rounded, single, shadow, none, or a table of borders
   },
 
   always_trigger = false, -- sometime show signature on new line or in middle of parameter can be confusing, set it to false for #58
@@ -53,8 +54,9 @@
   move_cursor_key = nil, -- imap, use nvim_set_current_win to move cursor between current win and floating
 }
 
-
 -- recommended:
 require'lsp_signature'.setup(cfg) -- no need to specify bufnr if you don't use toggle_key
 
-
+-- You can also do this inside lsp on_attach
+-- note: on_attach deprecated
+require'lsp_signature'.on_attach(cfg, bufnr) -- no need to specify bufnr if you don't use toggle_key 
