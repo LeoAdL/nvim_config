@@ -38,7 +38,6 @@ use {
     require('goto-preview').setup {default_mappings = true}
   end
 }
-use 'j-hui/fidget.nvim'
 
 use {
     "SmiteshP/nvim-navic",

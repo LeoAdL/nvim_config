@@ -37,7 +37,6 @@ require("configs/barbar")
 -- load snippets from path/of/your/nvim/config/my-cool-snippets
 require('leap').add_default_mappings()
 require('neoscroll').setup()
-require"fidget".setup{}
 require 'jabs'.setup {}
 require('gitsigns').setup()
 require('hlargs').setup()
