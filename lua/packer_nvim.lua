@@ -209,6 +209,6 @@ use {
     }
   end
 }
-use {'kevinhwang91/nvim-bqf', ft = 'qf'}
+use { 'vigoux/ltex-ls.nvim', requires = 'neovim/nvim-lspconfig' }
 end)
 
