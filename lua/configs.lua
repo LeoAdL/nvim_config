@@ -15,9 +15,7 @@ vim.cmd[[colorscheme nord]]
 vim.opt.termguicolors = true
 
 
-require("mason").setup()
-require("mason-lspconfig").setup()
-require("configs/lsp_signature")
+require("configs/lspconfig")
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./snippets" } })
 require("configs/nvim_cmp")
 

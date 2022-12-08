@@ -16,6 +16,7 @@ vim.opt.cursorline= true
 vim.opt.cursorlineopt= "number"
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"           
+vim.opt.smartindent= true 
 vim.g.vimtex_compiler_progname='nvr'
     -- ordinary Neovim
 

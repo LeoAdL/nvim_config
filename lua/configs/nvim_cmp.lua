@@ -99,6 +99,14 @@ local lspconfig = require('lspconfig')
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- Enable some language servers with the additional completion capabilities offered by nvim-cmp
+local servers = {'sumneko_lua','pyright', 'julials', 'texlab', 'ltex', 'marksman','grammarly'}
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -134,7 +142,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = {'luau_lsp','pyright', 'julials', 'texlab', 'ltex', 'marksman','grammarly'}
+local servers = {'sumneko_lua','pyright', 'julials', 'texlab', 'ltex', 'marksman','grammarly'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
