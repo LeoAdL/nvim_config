@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 if vim.g.vscode then
 	-- VSCode extension
 	require("leap").add_default_mappings()
@@ -25,5 +26,4 @@ else
 	require("mappings") -- plugin independent mappings
 	require("packer_nvim")
 	vim.g.tex_flavor = "latex"
-	vim.g.mapleader = "<Space>"
 end
