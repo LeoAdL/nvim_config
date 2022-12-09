@@ -2,6 +2,8 @@ if vim.g.vscode then
 	-- VSCode extension
 	require("leap").add_default_mappings()
 else
+	vim.g.loaded_netrw = 1
+	vim.g.loaded_netrwPlugin = 1
 	vim.opt.number = true
 	vim.opt.mouse = "a"
 	vim.opt.ignorecase = true
