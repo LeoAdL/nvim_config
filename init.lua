@@ -20,8 +20,6 @@ else
 	vim.opt.signcolumn = "yes"
 	vim.opt.smartindent = true
 	vim.g.vimtex_compiler_progname = "nvr"
-	-- ordinary Neovim
-
 	require("impatient")
 	require("configs") -- plugin independent configs
 	require("mappings") -- plugin independent mappings

@@ -42,4 +42,13 @@ require("nvim-treesitter.configs").setup({
 			-- E.g. whether to delete the angle bracket or whole tag in  <pair> </pair>
 		},
 	},
+	incremental_selection = {
+		enable = true,
+		keymaps = {
+			init_selection = "gnn",
+			node_incremental = "grn",
+			scope_incremental = "grc",
+			node_decremental = "grm",
+		},
+	},
 })
