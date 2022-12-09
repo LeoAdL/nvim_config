@@ -4,7 +4,7 @@ vim.cmd([[packadd packer.nvim]])
 return require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
-	use({ "shaunsingh/nord.nvim" })
+	use({ "gbprod/nord.nvim" })
 	use("nvim-lua/plenary.nvim")
 	use("ggandor/leap.nvim")
 	use("nvim-tree/nvim-web-devicons")
