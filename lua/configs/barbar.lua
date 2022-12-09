@@ -33,10 +33,10 @@ map("n", "<A-c>", "<Cmd>BufferClose<CR>", opts)
 -- Magic buffer-picking mode
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
 -- Sort automatically by...
-map("n", "<Space>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
-map("n", "<Space>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
-map("n", "<Space>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
-map("n", "<Space>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
+map("n", "<leader>bb", "<Cmd>BufferOrderByBufferNumber<CR>", opts)
+map("n", "<leader>bd", "<Cmd>BufferOrderByDirectory<CR>", opts)
+map("n", "<leader>bl", "<Cmd>BufferOrderByLanguage<CR>", opts)
+map("n", "<leader>bw", "<Cmd>BufferOrderByWindowNumber<CR>", opts)
 
 -- Set barbar's options
 require("bufferline").setup({

@@ -25,4 +25,5 @@ else
 	require("mappings") -- plugin independent mappings
 	require("packer_nvim")
 	vim.g.tex_flavor = "latex"
+	vim.g.mapleader = "<Space>"
 end
