@@ -1,0 +1,31 @@
+INFO:  latexindent.pl version 3.19.1, 2022-12-04, a script to indent .tex files
+       latexindent.pl lives here: /opt/homebrew/Cellar/latexindent/3.19.1/libexec/bin/
+       Thu Dec  8 18:03:34 2022
+       Reading input from STDIN
+INFO:  Processing switches:
+INFO:  Directory for backup files and indent.log:
+       .
+INFO:  Perl modules are being loaded from the following directories:
+       /opt/homebrew/opt/perl/lib/perl5/5.36/FindBin.pm
+       /opt/homebrew/Cellar/latexindent/3.19.1/libexec/lib/perl5/YAML/Tiny.pm
+       /opt/homebrew/opt/perl/lib/perl5/5.36/File/Copy.pm
+       /opt/homebrew/opt/perl/lib/perl5/5.36/File/Basename.pm
+       /opt/homebrew/opt/perl/lib/perl5/5.36/Getopt/Long.pm
+       /opt/homebrew/Cellar/latexindent/3.19.1/libexec/lib/perl5/File/HomeDir.pm
+INFO:  LatexIndent perl modules are being loaded from, for example:
+       /opt/homebrew/Cellar/latexindent/3.19.1/libexec/lib/perl5/LatexIndent/Document.pm
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from /opt/homebrew/Cellar/latexindent/3.19.1/libexec/bin/defaultSettings.yaml
+INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
+       Home directory is /Users/leoap (didn't find either indentconfig.yaml or .indentconfig.yaml)
+       To specify user settings you would put indentconfig.yaml here: /Users/leoap/indentconfig.yaml
+       Alternatively, you can use the hidden file .indentconfig.yaml as: /Users/leoap/.indentconfig.yaml
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl
