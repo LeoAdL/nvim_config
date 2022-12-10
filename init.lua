@@ -1,3 +1,4 @@
+---@diagnostic disable: 112, undefined-global: 112
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

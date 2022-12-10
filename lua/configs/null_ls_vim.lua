@@ -39,5 +39,6 @@ null_ls.setup({
 		null_ls.builtins.completion.luasnip,
 		null_ls.builtins.diagnostics.luacheck,
 		null_ls.builtins.formatting.stylua,
+		null_ls.builtins.code_actions.gitsigns,
 	},
 })
