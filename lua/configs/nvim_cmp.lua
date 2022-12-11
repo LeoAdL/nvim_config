@@ -90,10 +90,18 @@ cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp.config.sources({
 		{ name = "path" },
-	}, {
 		{ name = "cmdline" },
 	}),
 })
+
+for _, cmd_type in ipairs({ ":", "/", "?", "@" }) do
+	cmp.setup.cmdline(cmd_type, {
+		sources = {
+			{ name = "cmdline_history" },
+		},
+	})
+end
+
 local lspconfig = require("lspconfig")
 
 -- Set up lspconfig.
@@ -137,14 +145,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { "sumneko_lua", "pyright", "julials", "texlab", "ltex", "marksman", "grammarly" }
-for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup({
-		on_attach = on_attach,
-		capabilities = capabilities,
-	})
-end
-
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+local cmp = require("cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())

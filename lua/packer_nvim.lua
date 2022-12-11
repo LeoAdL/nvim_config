@@ -239,4 +239,5 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use({ "hrsh7th/cmp-nvim-lua" })
+	use({ "dmitmel/cmp-cmdline-history" })
 end)
