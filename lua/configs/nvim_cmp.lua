@@ -46,6 +46,7 @@ cmp.setup({
 		end, { "i", "s" }),
 	}),
 	sources = cmp.config.sources({
+		{ name = "nvim_lua" },
 		{ name = "nvim_lsp_document_symbol" },
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" }, -- For luasnip users.

@@ -238,4 +238,5 @@ return require("packer").startup(function(use)
 			require("toggleterm").setup({ open_mapping = [[<C-\>]] })
 		end,
 	})
+	use({ "hrsh7th/cmp-nvim-lua" })
 end)
