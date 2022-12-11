@@ -225,4 +225,10 @@ return require("packer").startup(function(use)
 	use({ "vigoux/ltex-ls.nvim", requires = "neovim/nvim-lspconfig" })
 	use({ "p00f/nvim-ts-rainbow" })
 	use({ "ggandor/flit.nvim" })
+	use({
+		"aserowy/tmux.nvim",
+		config = function()
+			require("tmux").setup()
+		end,
+	})
 end)
