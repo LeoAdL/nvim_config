@@ -10,9 +10,6 @@ vim.g.nord_bold = true
 -- require("nord").set()
 vim.cmd([[colorscheme nord]])
 
--- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
-
 require("configs/lspconfig")
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./snippets" } })
 require("configs/nvim_cmp")
