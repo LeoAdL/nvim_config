@@ -75,10 +75,8 @@ cmp.setup({
 -- Set configuration for specific filetype.
 cmp.setup.filetype("gitcommit", {
 	sources = cmp.config.sources({
-		{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
-	}, {
-		{ name = "buffer" },
-	}),
+		name = "cmp_git", -- You can specify the `cmp_git` source if you were installed it.
+	}, { name = "buffer" }),
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
@@ -93,8 +91,8 @@ cmp.setup.cmdline({ "/", "?" }, {
 cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp.config.sources({
-		{ name = "path" },
-	}, { { name = "cmdline" } }),
+		name = "path",
+	}, { name = "cmdline" }),
 })
 
 for _, cmd_type in ipairs({ ":", "/", "?", "@" }) do
