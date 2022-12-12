@@ -94,8 +94,7 @@ cmp.setup.cmdline(":", {
 	mapping = cmp.mapping.preset.cmdline(),
 	sources = cmp.config.sources({
 		{ name = "path" },
-		{ name = "cmdline" },
-	}),
+	}, { { name = "cmdline" } }),
 })
 
 for _, cmd_type in ipairs({ ":", "/", "?", "@" }) do
@@ -105,23 +104,6 @@ for _, cmd_type in ipairs({ ":", "/", "?", "@" }) do
 		},
 	})
 end
-
--- Set up lspconfig.
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-require("mason-lspconfig").setup_handlers({
-	-- The first entry (without a key) will be the default handler
-	-- and will be called for each installed server that doesn't have
-	-- a dedicated handler.
-	function(server_name) -- default handler (optional)
-		require("lspconfig")[server_name].setup({})
-	end,
-	-- Next, you can provide a dedicated handler for specific servers.
-	-- For example, a handler override for the `rust_analyzer`:
-	["rust_analyzer"] = function()
-		require("rust-tools").setup({})
-	end,
-})
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -150,9 +132,20 @@ local on_attach = function(client, bufnr)
 		vim.lsp.buf.format({ async = true })
 	end, bufopts)
 end
+-- Set up lspconfig.
 
--- Enable some language servers with the additional completion capabilities offered by nvim-cmp
+local lspconfig = require("lspconfig")
 
+require("mason").setup({})
+require("mason-lspconfig").setup({
+	ensure_installed = { "sumneko_lua", "pyright", "julials", "texlab", "ltex", "marksman", "grammarly" },
+})
+
+require("mason-lspconfig").setup_handlers({
+	function(server)
+		lspconfig[server].setup({ on_attach = on_attach })
+	end,
+})
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())

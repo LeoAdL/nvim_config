@@ -12,6 +12,7 @@ return require("packer").startup(function(use)
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
+		"jayp0521/mason-null-ls.nvim",
 	})
 
 	use({

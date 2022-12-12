@@ -10,7 +10,6 @@ vim.g.nord_bold = true
 -- require("nord").set()
 vim.cmd([[colorscheme nord]])
 
-require("configs/lspconfig")
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./snippets" } })
 require("configs/nvim_cmp")
 
