@@ -1,5 +1,7 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd([[packadd packer.nvim]])
+local packer = require("packer")
+packer.init({ max_jobs = 50 })
 
 return require("packer").startup(function(use)
 	-- Packer can manage itself
