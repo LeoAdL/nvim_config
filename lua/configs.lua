@@ -1,13 +1,11 @@
--- Example config in lua
-vim.g.nord_contrast = true
-vim.g.nord_borders = true
-vim.g.nord_disable_background = true
-vim.g.nord_italic = true
-vim.g.nord_uniform_diff_background = true
-vim.g.nord_bold = true
-
 -- Load the colorscheme
 -- require("nord").set()
+require("nord").setup({
+	-- your configuration comes here
+	-- or leave it empty to use the default settings
+	transparent = true, -- Enable this to disable setting the background color
+})
+
 vim.cmd([[colorscheme nord]])
 
 require("luasnip.loaders.from_vscode").lazy_load({ paths = { "./snippets" } })
@@ -33,4 +31,6 @@ require("jabs").setup({})
 require("configs/gitsigns")
 require("hlargs").setup()
 require("configs/gotopreview")
+require("configs/TS_Context")
 require("flit").setup()
+require("configs/vim_illuminate")
